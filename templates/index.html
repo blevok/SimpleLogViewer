@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="options">
+    Click to change log length or update
+    <form action="/" method="post">
+        <input type="submit" name="submit_button" value="25 Lines">
+        <input type="submit" name="submit_button" value="50 Lines">
+        <input type="submit" name="submit_button" value="100 Lines">
+        <input type="submit" name="submit_button" value="250 Lines">
+        <input type="submit" name="submit_button" value="500 Lines">
+        <input type="submit" name="submit_button" value="1000 Lines">
+    </form>
+</div></br>
+<div class="logs">
+Showing last {{ number_of_lines() }} lines</br></br>
+{% for last_lines in get_log_lines() %}
+<div >{{ last_lines }}</div>
+{% endfor %}
+</div>
+</div></br>
+{% endblock %}
