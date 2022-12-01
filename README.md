@@ -8,21 +8,21 @@ There is a basic authentication function to restrict access.
 
 ### Setup
 
-1. Create a folder for the log viewer
+1. Create a folder for the log viewer\
 ```mkdir /home/user/logviewer```
 
-2. CD to the new folder and clone the repo
-```cd /home/user/logviewer```
+2. CD to the new folder and clone the repo\
+```cd /home/user/logviewer```\
 ```git clone https://github.com/blevok/SimpleLogViewer.git```
 
-3. Create a virtual environment
+3. Create a virtual environment\
 ```python3 -m venv logviewerenv```
 
-4. Activate the virtual environment
+4. Activate the virtual environment\
 ```source logviewerenv/bin/activate```
 
-5. Install wheel, flask, and gunicorn in the virtual environment
-```pip install wheel```
+5. Install wheel, flask, and gunicorn in the virtual environment\
+```pip install wheel```\
 ```pip install gunicorn flask```
 
 6. Edit app.py
@@ -32,14 +32,14 @@ There is a basic authentication function to restrict access.
 
 ### Usage
 
-1. Run the app with gunicorn. Use a different port if 5000 is already in use
+1. Run the app with gunicorn. Use a different port if 5000 is already in use\
 ```gunicorn --bind 0.0.0.0:5000 wsgi```
 
 2. Go to your-server-ip:5000 in a browser and you should be prompted to login, and then you'll see the log file
 
 3. When you're finished, press Ctrl+C to stop the app
 
-4. Deactivate the virtual environment
+4. Deactivate the virtual environment\
 ```deactivate```
 
 If you want to leave the app running after you close the terminal, you can run it in screen.
