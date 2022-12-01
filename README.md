@@ -52,3 +52,7 @@ You can setup nginx or other web server to proxy requests and use a domain name.
 You can install an SSL certificate to secure the log viewer.
 
 You can add a systemd service file to run the app when the system starts.
+
+### Screenshot
+
+![SimpleLogViewer](https://raw.githubusercontent.com/blevok/SimpleLogViewer/master/SimpleLogViewer/simplelogviewer.png)
