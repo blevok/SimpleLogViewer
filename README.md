@@ -55,4 +55,4 @@ You can add a systemd service file to run the app when the system starts.
 
 ### Screenshot
 
-![SimpleLogViewer](https://raw.githubusercontent.com/blevok/SimpleLogViewer/master/SimpleLogViewer/simplelogviewer.png)
+![SimpleLogViewer](https://raw.githubusercontent.com/blevok/SimpleLogViewer/blob/master/SimpleLogViewer/simplelogviewer.png)
